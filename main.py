@@ -1,6 +1,10 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
+from streamlit_option_menu import option_menu
+
+#Home
+st.markdown('''
+            <div class='HomeHeader'>APPLICATION WEBSITE BY 4TH GROUP</div>
+            ''', unsafe_allow_html=True)
 
 st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
 
@@ -25,11 +29,11 @@ if tombol:
     st.success(f'Nilai densitas udara adalah'+str(Nilai_densitas_udara))
 
 st.title('Perhitungan Volume Sebenarnya')
-Massa_air = st.number_input('Masukan nilai massa air')
-Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume')
-Suhu_air = st.number_input('Masukan nilai suhu air',key=1)
-Densitas_air = st.number_input('Masukan nilai densitas air')
-Densitas_udara = st.number_input('Masukan nilai densitas udara')
+Massa_air = st.number_float('Masukan nilai massa air')
+Koefisien_muai_volume = st.number_float('Masukan nilai koefisien muai volume')
+Suhu_air = st.number_float('Masukan nilai suhu air',key=1)
+Densitas_air = st.number_float('Masukan nilai densitas air')
+Densitas_udara = st.number_float('Masukan nilai densitas udara')
 
 tombol = st.button('Hitung nilai volume sebenarnya')
 
