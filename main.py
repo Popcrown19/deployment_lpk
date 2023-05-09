@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
-navbar = option_menu(menu_title=None, options=['Perhitungan Densitas Air','Perhitungan Densitas Udara'])
 
 st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
 
