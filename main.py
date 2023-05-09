@@ -1,10 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
-
-#Home
-st.markdown('''
-            <div class='HomeHeader'>APPLICATION WEBSITE BY 4TH GROUP</div>
-            ''', unsafe_allow_html=True)
 
 st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
 
