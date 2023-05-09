@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
+navbar = option_menu(menu_title=None, options=['Perhitungan Densitas Air','Perhitungan Densitas Udara'])
 
 st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
 
@@ -34,5 +36,3 @@ tombol = st.button('Hitung nilai volume sebenarnya')
 if tombol:
     Nilai_volume_sebenarnya = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
     st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnya))
-
-
