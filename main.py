@@ -1,10 +1,15 @@
 import streamlit as st
+[theme]
+primaryColor="#8B4513"
+backgroundColor="#DEB887"
+secondaryBackgroundColor="#F5F5DC"
+textColor="#FFFAFA"
+font="sans serif"
 from streamlit_option_menu import option_menu
 
 navbar = option_menu(menu_title=None, options=['Home','Kalkulator Kalibrasi'],default_index=0, icons=['0', '0'], styles={'nav-link' : {'text-align': 'center'}})
 
 # Home #
-if navbar == 'Home':
     st.title('Project Membuat Web Aplikasi')
     st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
     
@@ -15,6 +20,7 @@ if navbar == 'Home':
     st.write('Muhammad Rafi Fadhlurrohman - 2220470')
     st.write('Oasima Oktaviani Matondang - 2220480')
     st.write('Violin Febriani - 2220496')
+if navbar == 'Home':
 
 # Kalkulator Kalibrasi #
 if navbar == 'Kalkulator Kalibrasi' :
@@ -53,9 +59,3 @@ if navbar == 'Kalkulator Kalibrasi' :
         if Densitas_air == 0 or Densitas_udara == 0:
                 st.write('ADA DATA YANG BELUM TERISI!')
             
-        [theme]
-primaryColor="#8B4513"
-backgroundColor="#DEB887"
-secondaryBackgroundColor="#F5F5DC"
-textColor="#FFFAFA"
-font="sans serif"
