@@ -1,19 +1,10 @@
 import streamlit as st
-[theme]
-primaryColor="#8B4513"
-backgroundColor="#DEB887"
-secondaryBackgroundColor="#F5F5DC"
-textColor="#FFFAFA"
-font="sans serif"
 from streamlit_option_menu import option_menu
 
 navbar = option_menu(menu_title=None, options=['Home','Kalkulator Kalibrasi'],default_index=0, icons=['0', '0'], styles={'nav-link' : {'text-align': 'center'}})
 
 # Home #
 if navbar == 'Home':
-    st.title('Project Membuat Web Aplikasi')
-    st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
-    
     st.title('Kelompok 4')
     st.write('Nama Anggota :')
     st.write('Adelia Almas Nurvani - 2220440')
