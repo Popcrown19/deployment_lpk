@@ -5,6 +5,9 @@ navbar = option_menu(menu_title=None, options=['Home','Kalkulator Kalibrasi'],de
 
 # Home #
 if navbar == 'Home':
+    st.title('Project Membuat Web Aplikasi')
+    st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
+    
     st.title('Kelompok 4')
     st.write('Nama Anggota :')
     st.write('Adelia Almas Nurvani - 2220440')
@@ -39,8 +42,8 @@ if navbar == 'Kalkulator Kalibrasi' :
         Massa_air = st.number_input('Masukan nilai massa air', format='%.4f')
         Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume', format='%.5f')
         Suhu_air = st.number_input('Masukan nilai suhu air',key=1, format='%.1f')
-        Densitas_air = st.number_input('Masukan nilai densitas air')
-        Densitas_udara = st.number_input('Masukan nilai densitas udara')
+        Densitas_air = st.number_input('Masukan nilai densitas air', format='%.5f')
+        Densitas_udara = st.number_input('Masukan nilai densitas udara', format='%.5f')
 
         tombol = st.button('Hitung nilai volume sebenarnya')
         
@@ -50,3 +53,9 @@ if navbar == 'Kalkulator Kalibrasi' :
         if Densitas_air == 0 or Densitas_udara == 0:
                 st.write('ADA DATA YANG BELUM TERISI!')
             
+        [theme]
+primaryColor="#8B4513"
+backgroundColor="#DEB887"
+secondaryBackgroundColor="#F5F5DC"
+textColor="#FFFAFA"
+font="sans serif"
