@@ -18,29 +18,29 @@ if navbar == 'Kalkulator Kalibrasi' :
     tab1, tab2 = st.tabs(['PERHITUNGAN DENSITAS', 'PERHITUNGAN VOLUME SEBENARNYA'])
     with tab1 :
         st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
-        st.title('Perhitungan densitas air')
-        Suhu_air = st.number_input('Masukan nilai suhu air', format='%.1f')
+        st.title('Perhitungan densitas air (gram/mL)')
+        Suhu_air = st.number_input('Masukan nilai suhu air (°C)', format='%.1f')
         tombol = st.button('Hitung nilai densitas air')
         if tombol:
             Nilai_densitas_air = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
             st.success(f'Nilai densitas air adalah' +str(Nilai_densitas_air))
 
-        st.title('Perhitungan densitas udara')
-        Kelembaban_udara = st.number_input('Masukan nilai kelembaban udara', format='%.1f')
-        Tekanan_udara = st.number_input('Masukan nilai tekanan udara', format='%.1f')
-        Suhu_udara = st.number_input('Masukan nilai suhu udara', format='%.1f')
+        st.title('Perhitungan densitas udara (gram/mL)')
+        Kelembaban_udara = st.number_input('Masukan nilai kelembaban udara (%)', format='%.1f')
+        Tekanan_udara = st.number_input('Masukan nilai tekanan udara (mmHg)', format='%.1f')
+        Suhu_udara = st.number_input('Masukan nilai suhu udara (°C)', format='%.1f')
         tombol = st.button('Hitung nilai densitas udara')
         if tombol:
             Nilai_densitas_udara = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
             st.success(f'Nilai densitas udara adalah'+str(Nilai_densitas_udara))
 
     with tab2 :
-        st.title('Perhitungan Volume Sebenarnya')
-        Massa_air = st.number_input('Masukan nilai massa air', format='%.4f')
-        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume', format='%.4f')
-        Suhu_air = st.number_input('Masukan nilai suhu air',key=1, format='%.1f')
-        Densitas_air = st.number_input('Masukan nilai densitas air', format='%.4f')
-        Densitas_udara = st.number_input('Masukan nilai densitas udara', format='%.4f')
+        st.title('Perhitungan Volume Sebenarnya (mL)')
+        Massa_air = st.number_input('Masukan nilai massa air (gram)', format='%.4f')
+        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume (°C^-1)', format='%.4f')
+        Suhu_air = st.number_input('Masukan nilai suhu air (°C)',key=1, format='%.1f')
+        Densitas_air = st.number_input('Masukan nilai densitas air (gram/mL)', format='%.4f')
+        Densitas_udara = st.number_input('Masukan nilai densitas udara (gram/mL)', format='%.4f')
 
         tombol = st.button('Hitung nilai volume sebenarnya')
         
