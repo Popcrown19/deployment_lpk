@@ -37,10 +37,10 @@ if navbar == 'Kalkulator Kalibrasi' :
     with tab2 :
         st.title('Perhitungan Volume Sebenarnya')
         Massa_air = st.number_input('Masukan nilai massa air', format='%.4f')
-        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume', format='%.5f')
+        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume', format='%.4f')
         Suhu_air = st.number_input('Masukan nilai suhu air',key=1, format='%.1f')
-        Densitas_air = st.number_input('Masukan nilai densitas air', format='%.5f')
-        Densitas_udara = st.number_input('Masukan nilai densitas udara', format='%.5f')
+        Densitas_air = st.number_input('Masukan nilai densitas air', format='%.4f')
+        Densitas_udara = st.number_input('Masukan nilai densitas udara', format='%.4f')
 
         tombol = st.button('Hitung nilai volume sebenarnya')
         
