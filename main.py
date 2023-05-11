@@ -8,7 +8,7 @@ if navbar == 'Home':
     st.title('Kelompok 4')
     st.write('Nama Anggota :')
     st.write('Adelia Almas Nurvani - 2220440')
-    st.write('Carolyn El Yire - 2220450')
+    st.write('Carolyn El Yire Penna Hutajulu - 2220450')
     st.write('Muhammad Rafi Fadhlurrohman - 2220470')
     st.write('Oasima Oktaviani Matondang - 2220480')
     st.write('Violin Febriani - 2220496')
