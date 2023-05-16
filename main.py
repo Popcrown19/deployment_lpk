@@ -6,7 +6,7 @@ navbar = option_menu(menu_title=None, options=['INTRO','KALIBRASI ALAT GELAS','K
 # Intro #
 if navbar == 'INTRO' :
     st.title('__**HAI FOLKS 👋🏻**__')
-    st.write('Aplikasi ini kami dedikasikan untuk memudahkan kalian dalam mengerjakan praktik kalibrasi alat gelas, tujuan utamanya adalah untuk mengefisiensikan waktu yang terbatas.')
+    st.write('Aplikasi ini kami dedikasikan untuk memudahkan kalian dalam mengerjakan perhitungan Kalibrasi alat gelas dengan tujuan utamanya adalah untuk mengefisiensikan waktu yang terbatas.')
     
     
     st.write('__________________________________________________________________________________________________________')
