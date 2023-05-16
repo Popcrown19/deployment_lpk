@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from PIL import image 
 
 navbar = option_menu(menu_title=None, options=['Kalibrasi Alat Gelas','Kalkulator Kalibrasi','About Us'],default_index=0, icons=['0', '0','0'], styles={'nav-link' : {'text-align': 'center'}})
 
@@ -32,6 +33,9 @@ if navbar == 'Kalibrasi Alat Gelas' :
         st.write('Menghitung Volume Sebenarnya : ')
         st.write('V20 = m(1 - y(t - 20))/(ρair - ρudara)')
         
+        # image #
+        image = Image.open('image/foto1.jpg')
+        st.image(image)
         
         
         st.write('Menghitung Densitas Air : ')
