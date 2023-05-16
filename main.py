@@ -134,7 +134,8 @@ if navbar == 'ABOUT US':
     st.write("---")
     left_column, right_column= st.columns(2)
     with left_column:
-    st.write('Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Web aplikasi yang kami buat, ditujukan untuk memudahkan mahasiswa/i khususnya IMAKA pada matkul Kalibrasi. Selain itu juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu')
+    kutipansatu = "Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Web aplikasi yang kami buat, ditujukan untuk memudahkan mahasiswa/i khususnya IMAKA pada matkul Kalibrasi. Selain itu juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu"
+    print (kutipansatu)
     
     with right_column:
     st.write('''Kami yang merupakan anggota kelompok 4 : 
