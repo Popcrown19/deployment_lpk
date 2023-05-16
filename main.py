@@ -130,8 +130,7 @@ if navbar == 'KALKULATOR KALIBRASI' :
         if press:
             Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
             st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnyaK))
-            if Nilai_volume_sebenarnyaK == 0 :
-                st.write('LENGKAPI DATA!')
+
             
 # Home #
 if navbar == 'ABOUT US':
