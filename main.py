@@ -70,7 +70,7 @@ if navbar == 'Kalkulator Kalibrasi' :
         Suhu_air = st.number_input('Masukan nilai suhu air (°C)', format='%.1f')
         tombol = st.button('Hitung nilai densitas air')
         if tombol:
-            Nilai_densitas_air = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
+            Nilai_densitas_airZ = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
             st.success(f'Nilai densitas air adalah' +str(Nilai_densitas_air))
 
         st.title('Perhitungan densitas udara (gram/mL)')
@@ -79,7 +79,7 @@ if navbar == 'Kalkulator Kalibrasi' :
         Suhu_udara = st.number_input('Masukan nilai suhu udara (°C)', format='%.1f')
         tombol = st.button('Hitung nilai densitas udara')
         if tombol:
-            Nilai_densitas_udara = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
+            Nilai_densitas_udaraS = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
             st.success(f'Nilai densitas udara adalah'+str(Nilai_densitas_udara))
             
         st.title('Perhitungan Volume Sebenarnya (mL)')
@@ -92,16 +92,12 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Hitung nilai volume sebenarnya')
         
         if tombol:
-            Nilai_volume_sebenarnya = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
+            Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
             st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnya))
         if Densitas_air == 0 or Densitas_udara == 0:
                 st.write('ADA DATA YANG BELUM TERISI!')
 
     with tab2 :
-        import numpy as np
-        adel=Nilai_densitas_air
-        onge=Nilai_densitas_udara
-        dohyun=Nilai_volume_sebenarnya
         
         st.title('Kesimpulan')
         st.write('Dari perhitungan yang telah didapat, diperoleh kesimpulan sebagai berikut :')
@@ -109,9 +105,9 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Kesimpulan akhir')
         
         if tombol:
-            st.write('Didapat nilai Densitas air adalah', adel)
-            st.write('Nilai Densitas udara adalah', onge) 
-            st.write('Nilai Volume sebenarnya adalah', dohyun)
+            Kesimpulan_akhir = st.write('Didapat nilai Densitas air adalah', Nilai_densitas_airZ)
+                               st.write('Nilai Densitas udara adalah', Nilai_densitas_udaraS) 
+                               st.write('Nilai Volume sebenarnya adalah', Nilai_volume_sebenarnyaK)
             
             
 # Home #
