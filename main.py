@@ -112,7 +112,7 @@ if navbar == 'Kalkulator Kalibrasi' :
             st.success(f'Nilai Densitas udara yang diperoleh adalah {Nilai_densitas_udaraS}')
             
         if press:
-            Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)                     st.success(f'Nilai Volume sebenarnta yang diperoleh adalah {Nilai_volume_sebenarnyaK}')
+            Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)                     st.success(f'Nilai Volume sebenarnya yang diperoleh adalah'+str{Nilai_volume_sebenarnyaK}')
             
             
 # Home #
