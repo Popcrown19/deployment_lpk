@@ -98,16 +98,32 @@ if navbar == 'Kalkulator Kalibrasi' :
                 st.write('ADA DATA YANG BELUM TERISI!')
 
     with tab2 :
-        st.title('Kesimpulan')
-        st.write('Dari perhitungan yang telah didapat, diperoleh kesimpulan sebagai berikut :')
-        
-        tombol = st.button('Kesimpulan akhir')
+        st.write("---")
+        tombol=st.button('Tampilkan hasil perhitungan [Nilai_densitas_airZ]')
+        pencet=st.button('Tampilkan hasil perhitungan [Nilai_densitas_udaraS]')
+        press=st.button('Tampilkan hasil perhitungan [Nilai_volume_sebenarnyaK]')
+        tekan=st.button('Tampilkan kesimpulan')
         
         if tombol:
+            Nilai_densitas_airZ = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
+            Nilai_densitas_udaraS = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
             Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
-            Kesimpulan_akhir = st.write(Nilai_volume_sebenarnyaK)
-        
-            st.success(f'Didapat nilai Volume sebenarnya adalah {Kesimpulan_akhir}')                   
+            
+            st.success(f'Nilai Densitas air yang diperoleh adalah {Nilai_densitas_airZ}')
+            
+        if pencet:
+            Nilai_densitas_airZ = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
+            Nilai_densitas_udaraS = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
+            Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
+            
+            st.success(f'Nilai Densitas udara yang diperoleh adalah {Nilai_densitas_udaraS}')
+            
+        if press:
+            Nilai_densitas_airZ = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
+            Nilai_densitas_udaraS = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
+            Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
+            
+            st.success(f'Nilai Volume sebenarnta yang diperoleh adalah {Nilai_volume_sebenarnyaK}')
             
             
 # Home #
