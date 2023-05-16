@@ -34,17 +34,17 @@ if navbar == 'Kalibrasi Alat Gelas' :
     with tab2 :
         st.title('Rumus')
         st.write('Menghitung Volume Sebenarnya : ')
-             st.write('V20 = m(1 - y(t - 20))/(ρair - ρudara)')
+        st.write('🔗 V20 = m(1 - y(t - 20))/(ρair - ρudara)')
         
         
         
         st.write('Menghitung Densitas Air : ')
-             st.write('0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
+        st.write('🔗 0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
         
         
         
         st.write('Menghitung Densitas Udara : ')
-             st.write('0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
+        st.write('🔗 0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
         
         
         
