@@ -19,7 +19,9 @@ if navbar == 'Kalibrasi Alat Gelas' :
         st.write('Menghitung Densitas Udara : ')
         st.write('0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
         
-        st.write('Keterangan :')
+        
+        
+        st.title('Keterangan :')
         st.write('V20 = Volume sebenarnya (mL)')
         st.write('m = Massa air (gram)')
         st.write('ρair = Densitas air (gram/mL)')
