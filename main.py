@@ -1,13 +1,23 @@
 import streamlit as st
 from streamlit_option_menu import option_menu 
 
-navbar = option_menu(menu_title=None, options=['Kalibrasi Alat Gelas','Kalkulator Kalibrasi','About Us'],default_index=0, icons=['0', '0','0'], styles={'nav-link' : {'text-align': 'center'}})
+navbar = option_menu(menu_title=None, options=['INTRO','KALIBRASI ALAT GELAS','KALKULATOR KALIBRASI','ABOUT US'],default_index=0, icons=['0', '0','0','0'], styles={'nav-link' : {'text-align': 'center'}})
+
+# Intro #
+if navbar == 'INTRO' :
+    st.title('__**HAI FOLKS 👋🏻**__')
+    st.write('Aplikasi ini kami dedikasikan untuk memudahkan kalian dalam mengerjakan praktik kalibrasi alat gelas, tujuan utamanya adalah untuk mengefisiensikan waktu yang terbatas.')
+    
+    
+    
+    st.write('© Kelompok 4')
+             
 
 # Kalibrasi Alat Gelas #
-if navbar == 'Kalibrasi Alat Gelas' :
+if navbar == 'KALIBRASI ALAT GELAS' :
     tab1, tab2 = st.tabs(['Penjelasan', 'Rumus'])
     with tab1 :
-        st.title('Penjelasan :')
+        st.title('Apa itu Kalibrasi?')
         st.write('🏷️   Kalibrasi peralatan gelas merupakan penentuan volume air yang dibutuhkan untuk mengisi peralatan tersebut sampai pada tanda batasnya (containment volume) atau volume air yang dapat dikeluarkan/ dipindahkan (delivery volume) dari peralatan tersebut pada kondisi yang spesifik setelah diisi (Lembeck, 1974).')
         
         
@@ -16,22 +26,22 @@ if navbar == 'Kalibrasi Alat Gelas' :
       
     
         st.title('Tujuan : ')
-        st.write('• Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
+        st.write('🏷️ Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
                  
                  
                 
-        st.write('• Alat gelas volumetrik merupakan alat yang digunakan untuk mengukur volume, khususnya cairan atau fluida yang umum digunakan di Laboratorium pendidikan, penelitian dan industri. Alat-alat gelas volumetrik umumnya terbuat dari gelas keras misalnya Duran 50 atau Pyrrex, selain itu ada pula yang terbuat dari gelas lunak.') 
+        st.write(' Alat gelas volumetrik merupakan alat yang digunakan untuk mengukur volume, khususnya cairan atau fluida yang umum digunakan di Laboratorium pendidikan, penelitian dan industri. Alat-alat gelas volumetrik umumnya terbuat dari gelas keras misalnya Duran 50 atau Pyrrex, selain itu ada pula yang terbuat dari gelas lunak.') 
                  
             
                  
-        st.write('• Pada masa modern, kemajuan teknologi merupakan sesuatu yang tidak bisa dihindari karena kemajuan teknlogi akan berjalan sesuai dengan kemajuan ilmu pengetahuan. Kemajuan teknologi banyak memberikan kemudahan dalam aktivitas manusia, Perkembangan aplikasi perhitungan merupakan salah satu contoh dari kemajuan teknologi yang memberikan kemudahan dalam aktivitas manusia.') 
+        st.write(' Pada masa modern, kemajuan teknologi merupakan sesuatu yang tidak bisa dihindari karena kemajuan teknlogi akan berjalan sesuai dengan kemajuan ilmu pengetahuan. Kemajuan teknologi banyak memberikan kemudahan dalam aktivitas manusia, Perkembangan aplikasi perhitungan merupakan salah satu contoh dari kemajuan teknologi yang memberikan kemudahan dalam aktivitas manusia.') 
            
         
         
-        st.write('• Melihat dari permasalahan mahasiswa dalam mata kuliah kalibrasi terutama dalam perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas, dengan memanfaatkan kemajuan teknologi dalam perkembangan aplikasi perhitungan, permasalahan tersebut dapat diatasi serta mempermudah mahasiswa dalam mengolah dan menentukan hasil dari perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas. Selain itu dengan terbatasnya waktu praktikum kalibrasi maka aplikasi ini sangat dibutuhkan mahasiswa untuk dapat mengolah dan menentukan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas secara ringkas dan praktis.')
+        st.write(' Melihat dari permasalahan mahasiswa dalam mata kuliah kalibrasi terutama dalam perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas, dengan memanfaatkan kemajuan teknologi dalam perkembangan aplikasi perhitungan, permasalahan tersebut dapat diatasi serta mempermudah mahasiswa dalam mengolah dan menentukan hasil dari perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas. Selain itu dengan terbatasnya waktu praktikum kalibrasi maka aplikasi ini sangat dibutuhkan mahasiswa untuk dapat mengolah dan menentukan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas secara ringkas dan praktis.')
        
        
-        
+        st.write('__________________________________________________________________________________________________________')
         st.write('© Kelompok 4')
             
   
@@ -62,7 +72,7 @@ if navbar == 'Kalibrasi Alat Gelas' :
         st.write('y = Koefisien muai volume (°C^-1)')
     
 # Kalkulator Kalibrasi #
-if navbar == 'Kalkulator Kalibrasi' :
+if navbar == 'KALKULATOR KALIBRASI' :
     tab1, tab2 = st.tabs(['PERHITUNGAN DENSITAS', 'KESIMPULAN'])
     with tab1 :
         st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
@@ -86,8 +96,8 @@ if navbar == 'Kalkulator Kalibrasi' :
         Massa_air = st.number_input('Masukan nilai massa air (gram)', format='%.4f')
         Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume (°C^-1)', format='%.4f')
         Suhu_air = st.number_input('Masukan nilai suhu air (°C)',key=1, format='%.1f')
-        Densitas_air = st.number_input('Masukan nilai densitas air (gram/mL)', format='%.4f')
-        Densitas_udara = st.number_input('Masukan nilai densitas udara (gram/mL)', format='%.4f')
+        Densitas_air = Nilai_densitas_airZ, format='%.4f')
+        Densitas_udara = Nilai_densitas_udaraS, format='%.4f')
 
         tombol = st.button('Hitung nilai volume sebenarnya')
         
@@ -115,20 +125,22 @@ if navbar == 'Kalkulator Kalibrasi' :
         if press:
             Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
             st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnyaK))
-        if Nilai_volume_sebenarnyaK == 0:
-            st.write('Lengkapi data terlebih dahulu!')
             
             
 # Home #
-if navbar == 'About Us':
+if navbar == 'ABOUT US':
    
     st.title('About Us')
-    st.write('blabkaboalakskds (ISI TEKS NANTI KALIMATNYA)')
-    st.write('Nama Anggota :')
+    st.write('Kelompok 4 memiliki visi misi untuk memudahkan kalian, khususnya mahasiswa/i AKA pada mata kuliah Kalibrasi. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Selain untuk memudahkan mahasiswa/i, web aplikasi yang telah kami buat, sesungguhnya juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
+    
+    st.write('Kami yang merupakan anggota kelompok 4 : ')
     st.write('Adelia Almas Nurvani - 2220440')
     st.write('Carolyn El Yire Penna Hutajulu - 2220450')
     st.write('Muhammad Rafi Fadhlurrohman - 2220470')
     st.write('Oasima Oktaviani Matondang - 2220480')
     st.write('Violin Febriani - 2220496')
+    
+    st.write('Jangan ragu untuk kiranya memberi kami kritik/saran.')
+    
     
     
