@@ -77,7 +77,7 @@ if navbar == 'KALIBRASI ALAT GELAS' :
     
 # Kalkulator Kalibrasi #
 if navbar == 'KALKULATOR KALIBRASI' :
-    tab1, tab2 = st.tabs(['PERHITUNGAN DENSITAS', 'KESIMPULAN'])
+    tab1, tab2 = st.tabs(['PERHITUNGAN', 'KESIMPULAN'])
     with tab1 :
         st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
         st.write('__________________________________________________________________________________________________________')
