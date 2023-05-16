@@ -132,11 +132,11 @@ if navbar == 'ABOUT US':
    
     st.title('About Us')
     st.write("---")
-    left_column, right_column= st.columns(2)
-    with left_column:
-    st.write('Blabla')
     
-    with right_column:
+   
+    st.write('Kelompok 4 memiliki visi misi untuk memudahkan pengguna pada matkul Kalibrasi, khususnya Perhitungan Alat Gelas. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan di Politeknik AKA Bogor. Selain untuk memudahkan pengguna, web aplikasi yang kami buat juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
+    
+    
     st.write('''Kami yang merupakan anggota kelompok 4 : 
     • Adelia Almas Nurvani - 2220440
     • Carolyn El Yire Penna Hutajulu - 2220450
