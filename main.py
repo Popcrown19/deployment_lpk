@@ -9,7 +9,7 @@ if navbar == 'INTRO' :
     st.write('Aplikasi ini kami dedikasikan untuk memudahkan kalian dalam mengerjakan praktik kalibrasi alat gelas, tujuan utamanya adalah untuk mengefisiensikan waktu yang terbatas.')
     
     
-    
+    st.write('__________________________________________________________________________________________________________')
     st.write('© Kelompok 4')
              
 
@@ -96,8 +96,8 @@ if navbar == 'KALKULATOR KALIBRASI' :
         Massa_air = st.number_input('Masukan nilai massa air (gram)', format='%.4f')
         Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume (°C^-1)', format='%.4f')
         Suhu_air = st.number_input('Masukan nilai suhu air (°C)',key=1, format='%.1f')
-        Densitas_air = Nilai_densitas_airZ, format='%.4f'
-        Densitas_udara = Nilai_densitas_udaraS, format='%.4f'
+        Densitas_air = st.number_input('Masukan nilai densitas air (gram/mL)', format='%.4f')
+        Densitas_udara = st.number_input('Masukan nilai densitas udara (gram/mL)', format='%.4f')
 
         tombol = st.button('Hitung nilai volume sebenarnya')
         
@@ -131,16 +131,23 @@ if navbar == 'KALKULATOR KALIBRASI' :
 if navbar == 'ABOUT US':
    
     st.title('About Us')
+    with left_column:
     st.write('Kelompok 4 memiliki visi misi untuk memudahkan kalian, khususnya mahasiswa/i AKA pada mata kuliah Kalibrasi. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Selain untuk memudahkan mahasiswa/i, web aplikasi yang telah kami buat, sesungguhnya juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
     
-    st.write('Kami yang merupakan anggota kelompok 4 : ')
-    st.write('Adelia Almas Nurvani - 2220440')
-    st.write('Carolyn El Yire Penna Hutajulu - 2220450')
-    st.write('Muhammad Rafi Fadhlurrohman - 2220470')
-    st.write('Oasima Oktaviani Matondang - 2220480')
-    st.write('Violin Febriani - 2220496')
+    with right_column:
+    st.write('''Kami yang merupakan anggota kelompok 4 : 
+    • Adelia Almas Nurvani - 2220440
+    • Carolyn El Yire Penna Hutajulu - 2220450
+    • Muhammad Rafi Fadhlurrohman - 2220470
+    • Oasima Oktaviani Matondang - 2220480
+    • Violin Febriani - 2220496
+    ''')
     
     st.write('Jangan ragu untuk kiranya memberi kami kritik/saran.')
+    
+    
+    st.write('__________________________________________________________________________________________________________')
+    st.write('© Kelompok 4')
     
     
     
