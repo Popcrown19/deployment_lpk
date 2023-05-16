@@ -99,9 +99,9 @@ if navbar == 'Kalkulator Kalibrasi' :
 
     with tab2 :
         import numpy as np
-        a=Nilai_densitas_air
-        b=Nilai_densitas_udara
-        c=Nilai_volume_sebenarnya
+        adel=Nilai_densitas_air
+        onge=Nilai_densitas_udara
+        dohyun=Nilai_volume_sebenarnya
         
         st.title('Kesimpulan')
         st.write('Dari perhitungan yang telah didapat, diperoleh kesimpulan sebagai berikut :')
@@ -109,9 +109,9 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Kesimpulan akhir')
         
         if tombol:
-            st.write('Didapat nilai Densitas air adalah', a)
-            st.write('Nilai Densitas udara adalah', b) 
-            st.write('Nilai Volume sebenarnya adalah', c)
+            st.write('Didapat nilai Densitas air adalah', adel)
+            st.write('Nilai Densitas udara adalah', onge) 
+            st.write('Nilai Volume sebenarnya adalah', dohyun)
             
             
 # Home #
