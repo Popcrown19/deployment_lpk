@@ -134,7 +134,7 @@ if navbar == 'ABOUT US':
     st.write("---")
     left_column, right_column= st.columns(2)
     with left_column:
-    st.write('Kelompok 4 memiliki visi misi untuk memudahkan kalian, khususnya mahasiswa(i) AKA pada mata kuliah Kalibrasi. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Selain untuk memudahkan mahasiswa(i), web aplikasi yang telah kami buat, sesungguhnya juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
+    st.write('Kelompok 4 memiliki visi misi untuk memudahkan para mahasiswa/i khususnya mahasiswa/i AKA pada mata kuliah Kalibrasi. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Selain untuk memudahkan mahasiswa/i, web aplikasi yang telah kami buat, sesungguhnya juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu')
     
     with right_column:
     st.write('''Kami yang merupakan anggota kelompok 4 : 
