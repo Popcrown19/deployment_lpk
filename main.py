@@ -71,7 +71,7 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Hitung nilai densitas air')
         if tombol:
             Nilai_densitas_airZ = 0.999974 - (((Suhu_air - 3.989)**2) * (Suhu_air + 338.636)) / (563385.4 * (Suhu_air + 72.45147))
-            st.success(f'Nilai densitas air adalah' +str(Nilai_densitas_air))
+            st.success(f'Nilai densitas air adalah' +str(Nilai_densitas_airZ))
 
         st.title('Perhitungan densitas udara (gram/mL)')
         Kelembaban_udara = st.number_input('Masukan nilai kelembaban udara (%)', format='%.1f')
@@ -80,7 +80,7 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Hitung nilai densitas udara')
         if tombol:
             Nilai_densitas_udaraS = ((0.464554 * Tekanan_udara) - (Kelembaban_udara * (0.00252 * Suhu_udara - 0.020582)))/((237.15 + Suhu_udara) * 1000)
-            st.success(f'Nilai densitas udara adalah'+str(Nilai_densitas_udara))
+            st.success(f'Nilai densitas udara adalah'+str(Nilai_densitas_udaraS))
             
         st.title('Perhitungan Volume Sebenarnya (mL)')
         Massa_air = st.number_input('Masukan nilai massa air (gram)', format='%.4f')
@@ -93,7 +93,7 @@ if navbar == 'Kalkulator Kalibrasi' :
         
         if tombol:
             Nilai_volume_sebenarnyaK = (Massa_air * (1 - Koefisien_muai_volume * (Suhu_air - 20))) / (Densitas_air - Densitas_udara)
-            st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnya))
+            st.success(f'Nilai volume sebenarnya adalah'+str(Nilai_volume_sebenarnyaK))
         if Densitas_air == 0 or Densitas_udara == 0:
                 st.write('ADA DATA YANG BELUM TERISI!')
 
