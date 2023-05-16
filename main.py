@@ -23,8 +23,10 @@ if navbar == 'Kalibrasi Alat Gelas' :
         st.write('V20 = m(1 - y(t - 20))/(ρair - ρudara)')
         
         
+        
         st.write('Menghitung Densitas Air : ')
         st.write('0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
+        
         
         
         st.write('Menghitung Densitas Udara : ')
