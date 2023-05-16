@@ -15,32 +15,36 @@ if navbar == 'Kalibrasi Alat Gelas' :
         
         
         st.title('Tujuan : ')
-        st.write('Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
+           st.write('Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
                  
                  
-        st.write('Alat gelas volumetrik merupakan alat yang digunakan untuk mengukur volume, khususnya cairan atau fluida yang umum digunakan di Laboratorium pendidikan, penelitian dan industri. Alat-alat gelas volumetrik umumnya terbuat dari gelas keras misalnya Duran 50 atau Pyrrex, selain itu ada pula yang terbuat dari gelas lunak.') 
+            st.write('Alat gelas volumetrik merupakan alat yang digunakan untuk mengukur volume, khususnya cairan atau fluida yang umum digunakan di Laboratorium pendidikan, penelitian dan industri. Alat-alat gelas volumetrik umumnya terbuat dari gelas keras misalnya Duran 50 atau Pyrrex, selain itu ada pula yang terbuat dari gelas lunak.') 
                  
                  
-        st.write('Pada masa modern, kemajuan teknologi merupakan sesuatu yang tidak bisa dihindari karena kemajuan teknlogi akan berjalan sesuai dengan kemajuan ilmu pengetahuan. Kemajuan teknologi banyak memberikan kemudahan dalam aktivitas manusia, Perkembangan aplikasi perhitungan merupakan salah satu contoh dari kemajuan teknologi yang memberikan kemudahan dalam aktivitas manusia.') 
+            st.write('Pada masa modern, kemajuan teknologi merupakan sesuatu yang tidak bisa dihindari karena kemajuan teknlogi akan berjalan sesuai dengan kemajuan ilmu pengetahuan. Kemajuan teknologi banyak memberikan kemudahan dalam aktivitas manusia, Perkembangan aplikasi perhitungan merupakan salah satu contoh dari kemajuan teknologi yang memberikan kemudahan dalam aktivitas manusia.') 
            
             
-        st.write('Melihat dari permasalahan mahasiswa dalam mata kuliah kalibrasi terutama dalam perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas, dengan memanfaatkan kemajuan teknologi dalam perkembangan aplikasi perhitungan, permasalahan tersebut dapat diatasi serta mempermudah mahasiswa dalam mengolah dan menentukan hasil dari perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas. Selain itu dengan terbatasnya waktu praktikum kalibrasi maka aplikasi ini sangat dibutuhkan mahasiswa untuk dapat mengolah dan menentukan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas secara ringkas dan praktis.')
+            st.write('Melihat dari permasalahan mahasiswa dalam mata kuliah kalibrasi terutama dalam perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas, dengan memanfaatkan kemajuan teknologi dalam perkembangan aplikasi perhitungan, permasalahan tersebut dapat diatasi serta mempermudah mahasiswa dalam mengolah dan menentukan hasil dari perhitungan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas. Selain itu dengan terbatasnya waktu praktikum kalibrasi maka aplikasi ini sangat dibutuhkan mahasiswa untuk dapat mengolah dan menentukan densitas air, densitas udara, dan volume sebenarnya dalam kalibrasi alat gelas secara ringkas dan praktis.')
        
-                 
+       
+        
+        st.write('© Kelompok 4')
+            
+  
     with tab2 :
         st.title('Rumus')
         st.write('Menghitung Volume Sebenarnya : ')
-        st.write('V20 = m(1 - y(t - 20))/(ρair - ρudara)')
+             st.write('V20 = m(1 - y(t - 20))/(ρair - ρudara)')
         
         
         
         st.write('Menghitung Densitas Air : ')
-        st.write('0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
+             st.write('0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
         
         
         
         st.write('Menghitung Densitas Udara : ')
-        st.write('0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
+             st.write('0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
         
         
         
