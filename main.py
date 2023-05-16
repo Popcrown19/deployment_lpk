@@ -8,10 +8,10 @@ if navbar == 'Kalibrasi Alat Gelas' :
     tab1, tab2 = st.tabs(['Penjelasan', 'Rumus'])
     with tab1 :
         st.title('Penjelasan :')
-        st.write('     Kalibrasi peralatan gelas merupakan penentuan volume air yang dibutuhkan untuk mengisi peralatan tersebut sampai pada tanda batasnya (containment volume) atau volume air yang dapat dikeluarkan/ dipindahkan (delivery volume) dari peralatan tersebut pada kondisi yang spesifik setelah diisi (Lembeck, 1974).')
+        st.write('🏷️   Kalibrasi peralatan gelas merupakan penentuan volume air yang dibutuhkan untuk mengisi peralatan tersebut sampai pada tanda batasnya (containment volume) atau volume air yang dapat dikeluarkan/ dipindahkan (delivery volume) dari peralatan tersebut pada kondisi yang spesifik setelah diisi (Lembeck, 1974).')
         
         
-        st.write('     Kalibrasi menurut Eurachem/Citac Guide 4 adalah merupakan serangkaian kegiatan yang membentuk hubungan antara nilai yang ditunjukkan oleh instrumen ukur atau sistem pengukuran, atau nilai yang diwakili oleh bahan ukur, dengan nilai-nilai yang sudah diketahui yang berkaitan dari besaran yang diukur dalam kondisi tertentu.')
+        st.write('🏷️   Kalibrasi menurut Eurachem/Citac Guide 4 adalah merupakan serangkaian kegiatan yang membentuk hubungan antara nilai yang ditunjukkan oleh instrumen ukur atau sistem pengukuran, atau nilai yang diwakili oleh bahan ukur, dengan nilai-nilai yang sudah diketahui yang berkaitan dari besaran yang diukur dalam kondisi tertentu.')
         
         
         st.title('Tujuan : ')
