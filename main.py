@@ -47,19 +47,22 @@ if navbar == 'KALIBRASI ALAT GELAS' :
   
     with tab2 :
         st.title('Rumus')
+        st.write('__________________________________________________________________________________________________________')
         st.write('Menghitung Volume Sebenarnya : ')
         st.write('🔗 V20 = m(1 - y(t - 20))/(ρair - ρudara)')
+        st.write('__________________________________________________________________________________________________________')
         
         
-        
+        st.write('__________________________________________________________________________________________________________')
         st.write('Menghitung Densitas Air : ')
         st.write('🔗 0.999974 - (ta - 3.989)^2 (ta + 338.636)/563385.4(ta + 72.45147)')
+        st.write('__________________________________________________________________________________________________________')
         
         
-        
+        st.write('__________________________________________________________________________________________________________')
         st.write('Menghitung Densitas Udara : ')
         st.write('🔗 0.464554P - H(0.00252tu - 0.020582)/(237.15 + tu)1000')
-        
+        st.write('__________________________________________________________________________________________________________')
         
         
         st.title('Keterangan :')
@@ -70,12 +73,16 @@ if navbar == 'KALIBRASI ALAT GELAS' :
         st.write('ta = Suhu air (°C)')
         st.write('tu = Suhu udara (°C)')
         st.write('y = Koefisien muai volume (°C^-1)')
+        st.write('__________________________________________________________________________________________________________')
+        st.write('© Kelompok 4')
+    
     
 # Kalkulator Kalibrasi #
 if navbar == 'KALKULATOR KALIBRASI' :
     tab1, tab2 = st.tabs(['PERHITUNGAN DENSITAS', 'KESIMPULAN'])
     with tab1 :
         st.title('Menghitung Volume Sebenarnya pada Perhitungan Alat Gelas Kalibrasi')
+        st.write('__________________________________________________________________________________________________________')
         st.title('Perhitungan densitas air (gram/mL)')
         Suhu_air = st.number_input('Masukan nilai suhu air (°C)', format='%.1f')
         tombol = st.button('Hitung nilai densitas air')
@@ -134,15 +141,15 @@ if navbar == 'ABOUT US':
     st.write("---")
     
    
-    st.write('Kelompok 4 memiliki visi misi untuk memudahkan pengguna pada matkul Kalibrasi, khususnya Perhitungan Alat Gelas. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan di Politeknik AKA Bogor. Selain untuk memudahkan pengguna, web aplikasi yang kami buat juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
+    st.write('🏷️ Kelompok 4 memiliki visi misi untuk memudahkan pengguna pada matkul Kalibrasi, khususnya Perhitungan Alat Gelas. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan di Politeknik AKA Bogor. Selain untuk memudahkan pengguna, web aplikasi yang kami buat juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
     
     
-    st.write('''Kami yang merupakan anggota kelompok 4 : 
-    • Adelia Almas Nurvani - 2220440
-    • Carolyn El Yire Penna Hutajulu - 2220450
-    • Muhammad Rafi Fadhlurrohman - 2220470
-    • Oasima Oktaviani Matondang - 2220480
-    • Violin Febriani - 2220496
+    st.write('Kami yang merupakan anggota kelompok 4 : 
+    st.write(' • Adelia Almas Nurvani - 2220440')
+    st.write(' • Carolyn El Yire Penna Hutajulu - 2220450')
+    st.write(' • Muhammad Rafi Fadhlurrohman - 2220470')
+    st.write(' • Oasima Oktaviani Matondang - 2220480')
+    st.write(' • Violin Febriani - 2220496')
     ''')
     
     st.write('Jangan ragu untuk kiranya memberi kami kritik/saran.')
