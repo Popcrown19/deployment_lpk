@@ -144,13 +144,13 @@ if navbar == 'ABOUT US':
     st.write('🏷️ Kelompok 4 memiliki visi misi untuk memudahkan pengguna pada matkul Kalibrasi, khususnya Perhitungan Alat Gelas. Kami merupakan salah satu perwakilan dari kelas 1E yakni jurusan Penjaminan Mutu Industri Pangan di Politeknik AKA Bogor. Selain untuk memudahkan pengguna, web aplikasi yang kami buat juga dirancang sebagai alat hitung yang memerlukan waktu minimal. Singkatnya, web aplikasi yang kami buat akan jauh lebih mengefisiensikan waktu.')
     
     
-    st.write('Kami yang merupakan anggota kelompok 4 : 
+    st.write('Kami yang merupakan anggota kelompok 4 : ')
     st.write(' • Adelia Almas Nurvani - 2220440')
     st.write(' • Carolyn El Yire Penna Hutajulu - 2220450')
     st.write(' • Muhammad Rafi Fadhlurrohman - 2220470')
     st.write(' • Oasima Oktaviani Matondang - 2220480')
     st.write(' • Violin Febriani - 2220496')
-    ''')
+    
     
     st.write('Jangan ragu untuk kiranya memberi kami kritik/saran.')
     
