@@ -105,9 +105,8 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Kesimpulan akhir')
         
         if tombol:
-            Kesimpulan_akhir = st.write('Didapat nilai Densitas air adalah', Nilai_densitas_airZ)
-                               st.write('Nilai Densitas udara adalah', Nilai_densitas_udaraS) 
-                               st.write('Nilai Volume sebenarnya adalah', Nilai_volume_sebenarnyaK)
+            Kesimpulan_akhir = st.write('Didapat nilai Densitas air adalah', Nilai_densitas_airZ, 'nilai Densitas udara adalah', Nilai_densitas_udaraS, 'dan nilai Volume sebenarnya adalah', Nilai_volume_sebenarnyaK)
+                               
             
             
 # Home #
