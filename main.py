@@ -15,7 +15,7 @@ if navbar == 'Kalibrasi Alat Gelas' :
         
         
         st.title('Tujuan : ')
-           st.write('Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
+            st.write('Aplikasi ini digunakan dalam mempermudah perhitungan volume sebenarnya, volume didefinisikan sebagai ukuran menempati ruang dalam tiga dimensi. Setiap benda mempunyai volume dan mempunyai bobot tertentu, karena pada dasarnya penempatan ruang dilakukan oleh zat. Perbandingan antara bobot benda dengan volumenya pada suhu tertentu selalu tetap, disebut sebagai densitas atau kerapatan benda. Volume benda selalu dipengaruhi suhu bendanya. Umumnya benda memuai sejalan dengan naiknya suhu dan sebaliknya. Bila karena sesuatu kondisi benda mengalami penguapan, maka volume benda akan berkurang.') 
                  
                  
             st.write('Alat gelas volumetrik merupakan alat yang digunakan untuk mengukur volume, khususnya cairan atau fluida yang umum digunakan di Laboratorium pendidikan, penelitian dan industri. Alat-alat gelas volumetrik umumnya terbuat dari gelas keras misalnya Duran 50 atau Pyrrex, selain itu ada pula yang terbuat dari gelas lunak.') 
