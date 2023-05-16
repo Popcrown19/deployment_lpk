@@ -105,8 +105,8 @@ if navbar == 'Kalkulator Kalibrasi' :
         tombol = st.button('Kesimpulan akhir')
         
         if tombol:
-            Kesimpulan_akhir = st.text_input(Nilai_volume_sebenarnyaK)
-            st.write('Didapat nilai Volume sebenarnya adalah: ', Kesimpulan_akhir)                   
+            Kesimpulan_akhir = st.write(Nilai_volume_sebenarnyaK)
+            st.success(f'Didapat nilai Volume sebenarnya adalah: ', (Kesimpulan_akhir))                   
             
             
 # Home #
