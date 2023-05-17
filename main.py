@@ -99,7 +99,7 @@ if navbar == 'KALKULATOR KALIBRASI' :
             
         st.title('Perhitungan Volume Sebenarnya (mL)')
         Massa_air = st.number_input('Masukan nilai massa air (gram)', format='%.4f')
-        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume (°C^-1)', format='%.4f')
+        Koefisien_muai_volume = st.number_input('Masukan nilai koefisien muai volume (°C^-1)', format='%.5f')
         Suhu_air = st.number_input('Masukan nilai suhu air (°C)',key=1, format='%.1f')
         Densitas_air = st.number_input('Masukan nilai densitas air (gram/mL)', format='%.4f')
         Densitas_udara = st.number_input('Masukan nilai densitas udara (gram/mL)', format='%.4f')
